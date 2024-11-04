@@ -16,7 +16,6 @@ public class BurgerTest {
 
     @Mock
     private Bun bun;
-    private Ingredient ingredient;
 
     @Before
     public void setUp(){
@@ -56,6 +55,7 @@ public class BurgerTest {
         burger.removeIngredient(0);
         assertTrue(burger.ingredients.isEmpty());
     }
+
 
     @Test
     public void moveIngredientTest() {
